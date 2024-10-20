@@ -1,0 +1,11 @@
+{
+  "name": "totp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Mohammad <smd.force@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1",
+    "speakeasy": "^2.0.0"
+  }
+}

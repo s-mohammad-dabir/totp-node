@@ -1,0 +1,12 @@
+services:
+  totp-node-app:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "${PORT}:${PORT}"   # Map the host port to the container port dynamically
+    environment:
+      - NODE_ENV=production
+      - PORT=${PORT}
+      - TOTP_SECRET=${TOTP_SECRET}
+    restart: always
